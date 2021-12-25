@@ -1,0 +1,20 @@
+head, body, canvas, h1, h2, h3, h4, p, div, canvas {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    background-color: black;
+}
+
+#setOri {
+    background-color: lavender;
+    padding: 5px;
+    padding-bottom:20px;
+}
+
+#triGen {
+    background-color:antiquewhite;
+    padding: 5px;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Poopy</title>
+</head>
+<body>
+    <canvas id="main" height="500px" width="1000px"></canvas>
+    <div id="setOri">
+        <h4>Manually set origin (x, y, z): </h4>
+        <div id="outputOri" style="padding-bottom:10px;"></div>
+        <div>x-point:
+        <input id="x" type="number" value="250"></input>
+        </div>
+        <div>y-point:
+        <input id="y" type="number" value="150"></input>
+        </div>
+        <div>z-point:
+        <input id="z" type="number" value="0"></input>
+        </div>
+        <button id="apply" type="button">Apply</button>
+    </div>
+    <div id="setRotate">
+        <h4>Manually set type of rotation (X, Y, Z, or none): </h4>
+        <div id="rotApply">
+            <div>
+                <input id="rotX" type="checkbox"></input>
+                <label>Rotate with respect to X axis</label>
+            </div>
+            <div>
+                <input id="rotY" type="checkbox"></input>
+                <label>Rotate with respect to Y axis</label>
+            </div>
+            <div>
+                <input id="rotZ" type="checkbox"></input>
+                <label>Rotate with respect to Z axis</label>
+            </div>
+        </div>
+    </div> 
+    <div id="triGen">
+        <div>
+            <p><i>Every 3 points inputted will automatically make a triangle.</i></p>
+            <h3>CURRENT POINTS: </h3>
+            <div id="points"></div>
+        </div>
+    </div>
+</body>
+<script src="objectMaker.js"></script>
+</html>
